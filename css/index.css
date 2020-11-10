@@ -1397,6 +1397,14 @@ body{
  	}
 
   }
+   @media  only screen and (min-width: 0px) and (max-width: 320px){
+  .sale-title{
+ 	font-size: 15px;
+  }
+  .sale-title .btn-outline-light{
+ 	font-size: 6px;
+  }
+}
 
    /********************************************************Browse  responsive****************************************************/
    @media  only screen and (min-width: 761px) and (max-width: 991px){
