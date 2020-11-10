@@ -1,0 +1,596 @@
+*{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #121212;
+	overflow-x: hidden;
+}
+.navbar-brand .fa-gamepad{
+	color: white;
+}
+.navbar-brand{
+	color:#03e9f4 !important;
+
+}
+.navbar-custom{
+	background-color: #2A2A2A;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+}
+.navbar-custom .nav-link{
+	transition-duration: 560ms;
+	transition-timing-function: ease !important;
+}
+.navbar-custom .btn-outline-light:hover {
+	background-color:#03e9f4 !important; 
+
+}
+.navbar-custom .nav-link:hover{
+ 	color: #03e9f4 !important;
+ }
+ .active{
+ 	color: #03e9f4 !important;
+ }
+/*fancy search*/
+.search-bar{
+	background: #121212;
+	height: 40px;
+	border-radius: 40px;
+}
+.search-bar:hover > .search-txt{
+	width: 200px;
+	padding: 0 6px;
+}
+.search-bar:hover > .search-btn{
+	background: #03e9f4;
+	color: black;
+}
+.search-btn{
+	color: white;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:  #2A2A2A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+}
+.search-txt{
+	border: none;
+	background: none;
+	outline:none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
+.bsearch{
+	display: none;
+}
+
+/************************************************ scroll my way **********************************************/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#03e9f4;
+ 	box-shadow: 0 0 5px #03e9f4,
+ 	            0 0 25px #03e9f4,
+ 	            0 0 50px #03e9f4,
+ 	            0 0 200px #03e9f4;
+}
+::-webkit-scrollbar-track:hover{
+ 	box-shadow:inset 0 0 5px #03e9f4;
+}
+/***********************************************Side pannel**************************************************/
+/*.side{
+	margin-left: -0.5%;
+	padding-left: 0;
+	position: fixed;
+	width: 20%;
+	height: 100%;
+	background-color: #2A2A2A;
+	background-size: cover;
+	z-index: -1;
+}
+.side .head{
+	color: white;
+	margin-top: 10%;
+	font-family: 'Roboto Slab', serif;
+	padding-left: 10%;
+}*/
+
+/************************************************Side pannel**************************************************/
+
+.sidenav .head{
+	color: white;
+	margin-top: 2%;
+	margin-bottom: 0;
+	font-family: 'Roboto Slab', serif;
+	padding-left: 10%;
+	padding-bottom: 10%;
+	background-color: #2A2A2A;
+	padding-top: 1%;
+	border-bottom: 1px solid #03e9f4; 
+}
+.sidenav .subhead{
+	color: white;
+	padding-top: 10%;
+	font-family: 'Roboto Slab', serif;
+	padding-left: 12%;
+	padding-bottom: 4%;
+	background-color: #2A2A2A;
+}
+.fa-sliders-h{
+	font-size: 25px;
+}
+.sidenav {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #2A2A2A;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: gray;
+  display: block;
+  padding-left: 12%;
+  transition-duration: 560ms;
+  transition-timing-function: ease;
+}
+.sidenav a:hover {
+  color: #03e9f4;
+}
+
+
+/************************************************Main**************************************************/
+.main{
+	margin-left: 250px;
+	background-color: #121212;
+	width: auto;
+	height: 100%;
+	margin-top:5%;
+}
+.tabcontent{
+	transition-duration: 560ms;
+    transition-timing-function: ease;
+}
+.gamehead{
+	color: white;
+	margin-top: 6%;
+	font-family: 'Roboto Slab', serif;
+	padding-left: 5%;
+}
+/************************************************Cards**************************************************/
+.games{
+	margin-left: 4%;
+}
+.card{
+	margin-top: 10%;
+	margin-left: 2% !important;
+	padding-right: 2% !important;
+	height: auto;
+	width: 200px;
+    background-color: #121212;
+    display: inline-block;
+
+}
+.card-title{
+	color: white;
+	padding-left: 3px;
+	padding-top: 10px;
+	margin-bottom: 0;
+	font-family: 'Lora', serif;
+	transition: .5s ease;
+
+}
+.card-sub{
+	padding-left: 3px;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	font-size: 15px;
+	
+}
+.card-price{
+	color: white;
+	padding-left: 3px;
+	font-weight: bold;
+	padding-top: 0;
+	margin-top: 0;
+
+}
+.card:hover{
+	cursor: pointer;
+}
+.card:hover .card-title{
+	color: #03e9f4;
+}
+.card img{
+	transition: .5s ease;
+}
+.card:hover img{
+	/*opacity: 0.6;*/
+	box-shadow: 0 3px #03e9f4;
+}
+
+/************************************************footer**************************************************/
+ .main-footer{
+ 	background-color: #2A2A2A;
+ 	height: auto;
+ 	padding-bottom: 60px;
+ 	margin-bottom: 0;
+ 	/*box-shadow: 8px 1px 10px rgba(0,0,0,0.3);*/
+ 	margin-left: 220px;
+ 	
+ }
+ .main-footer h3{
+ 	color: #03e9f4;
+ 	margin-top: 7%;
+ 	padding-bottom: 3%;
+ }
+ .main-footer .dis{
+ 	padding-top: 3%;
+ }
+ .social i{
+ 	font-size: 35px;
+ 	padding: 10px;
+ 	color: white;
+ 	transition-duration: 560ms;
+	transition-timing-function: ease;
+ }
+ .social i:hover{
+ 	color: #03e9f4;
+ }
+ .main-footer p{
+ 	color: white;
+ }
+ .foot-content a{
+ 	text-decoration: none;
+ 	color: white;
+ 	line-height: 16px;
+ }
+ .foot-content a:hover {
+   color: #03e9f4;
+}
+ .foot-content h6 {
+ 	margin-top: 20%;
+ 	font-size: 17px;
+ 	padding-bottom: 3%;
+ }
+
+ .main-footer .fa-gamepad{
+ 	color: white;
+ }
+.main-footer .up{
+	margin-top: 20%;
+	float: right;
+ }
+.up .btn-outline-light{
+	transition-duration: 560ms;
+	transition-timing-function: ease !important;
+	box-shadow: none;
+}
+.up .btn-outline-light:hover{
+ 	background-color:#03e9f4 !important ;
+ 	color: #050801 ;
+ 	border: 1px solid #03e9f4;
+ 	box-shadow: 0 0 5px #03e9f4,
+ 	            0 0 25px #03e9f4,
+ 	            0 0 50px #03e9f4,
+ 	            0 0 200px #03e9f4;
+ }
+ 
+ .copyright{
+ 	color: white;
+ 	background-color: #2A2A2A;
+ 	padding-bottom: 1%;
+ 	margin-left: 140px;
+ 	width: auto;
+ }
+
+
+
+/*****************************************************************************************/
+ /*********************************Responsive***********************************************/
+
+
+/*************************************************** nav ************************************************/
+@media  only screen and (min-width: 0px) and (max-width: 761px)  { 
+
+	
+	body{
+		width: auto;
+		
+	}
+
+	.navbar-brand{
+	font-size: 30px;
+	}
+	
+	.navbar-custom .nav-link{
+		padding-bottom: 3%;
+	}
+	.navbar-custom .btn-outline-light {
+		margin-top: 3%;
+		margin-bottom: 3%;
+		margin-left: 1% !important;
+		padding: 5px 10px ;
+
+
+	}
+	.search-bar{
+		display: none;
+	}
+	.bsearch{
+		display: block;
+		width: 30%;
+		margin-left: 1%; 
+		padding-bottom: 2%;
+	}
+
+	
+ 
+}
+@media  only screen and (min-width: 376px) and (max-width: 425px){
+	.bsearch{
+		width: 50%;
+	}
+
+}
+@media  only screen and (min-width: 0px) and (max-width: 375px){
+	.bsearch{
+		width: 90%;
+	}
+
+}
+@media  only screen and (min-width: 0px) and (max-width: 335px){
+		/*navbar*/
+		.navbar-brand {
+			font-size: 20px;
+		}
+
+		/*new release*/
+		.new-rel{
+			width: 80%;
+			margin-left: 1%;
+		}
+		.new-rel .card img {
+		 	width: 70%;
+		  }
+
+	}
+   @media  only screen and (min-width: 762px) and (max-width: 991px)  {
+   	.navbar-brand {
+			font-size: 30px;
+		}
+ 
+   }
+   @media  only screen and (min-width: 762px) and (max-width: 991px){
+   	.search-bar{
+		display: none;
+	}
+	.bsearch{
+		display: block;
+		width: 30%;
+		margin-left: 1%; 
+		padding-bottom: 2%;
+	}
+
+   }
+    /*************************************************** side ************************************************/
+    @media  only screen and (min-width: 761px) and (max-width: 1168px){
+    	.sidenav{
+    		width:  180px;
+    	}
+    	.sidenav .head{
+    		font-size: 25px;
+    	}
+    	.sidenav .subhead{
+    		font-size: 15px;
+    	}
+    	.sidenav a{
+    		font-size: 14px;
+    	}
+    }
+     @media  only screen and (min-width: 0px) and (max-width: 760px){
+     	.sidenav{
+     		background-color: #2A2A2A;
+     		box-shadow: none;
+     		margin-left: 0;
+     		padding-left: 0;
+     		width: 100%;
+     		position: relative;
+     		padding-bottom: 5%;
+     		height: auto;
+
+     	}
+     	.sidenav .head{
+     		margin-top: 0;
+     		padding-bottom: 3%;
+     		background-color: unset;
+     		/*border-bottom: none;*/
+     		font-size: 20px;
+     		padding-left: 12%;
+     	}
+     	.sidenav .subhead{
+     		padding-top: 3%;
+     		padding-bottom: 2%;
+
+     		background-color: unset;
+     		font-size: 15px;
+     	}
+     	.sidenav a{
+     		font-size: 15px;
+     		display: inline-block;
+     		margin-left: 10%;
+     		padding: 6px 8px 6px 16px;
+
+     	}
+
+     }
+
+   /*************************************************** main ************************************************/
+@media  only screen and (min-width: 1169px) and (max-width: 1350px){
+	.main{
+		margin-left: 200px;
+
+	}
+
+}
+@media  only screen and (min-width: 857px) and (max-width: 1168px){
+	.main{
+		margin-left: 190px;
+
+	}
+	.card{
+		width: 150px;
+	}
+	.card-title{
+		font-size: 15px;
+	}
+	.card-sub{
+		font-size: 13px;
+	}
+	.card-price{
+		font-size: 13px;
+	}
+
+}
+@media  only screen and (min-width: 761px) and (max-width: 856px){
+	.main{
+		margin-left: 165px;
+
+	}
+	.card{
+		width: 150px;
+	}
+	.card-title{
+		font-size: 15px;
+	}
+	.card-sub{
+		font-size: 13px;
+	}
+	.card-price{
+		font-size: 13px;
+	}
+}
+@media  only screen and (min-width: 507px) and (max-width: 760px){
+	.main{
+		margin-left: 4%;
+
+	}
+}
+@media  only screen and (min-width: 426px) and (max-width: 506px){
+	.main{
+		margin-left: 4%;
+	}
+	.card{
+		width: 150px;
+	}
+
+
+}
+@media  only screen and (min-width: 386px) and (max-width: 425px){
+
+	.main{
+		margin-left: 1%;
+	}
+	.card{
+		width: 150px;
+	}
+
+}
+@media  only screen and (min-width: 332px) and (max-width: 385px){
+
+	.main{
+		margin-left: 12%;
+
+	}
+	.card{
+		width: 200px;
+	}
+
+}
+@media  only screen and (min-width: 263px) and (max-width: 331px){
+
+	.main{
+		margin-left: 5%;
+		
+	}
+	.card{
+		width: 200px;
+	}
+
+}
+@media  only screen and (min-width: 0px) and (max-width: 262px){
+
+	.main{
+		margin-left: 2%;
+		
+	}
+	.card{
+		width: 150px;
+	}
+
+}
+/*****************************footer******************************/
+
+@media  only screen and (min-width: 0px) and (max-width: 761px)  {
+
+
+.main-footer h3{
+ 	padding-top: 5%;
+ 	padding-bottom :10%;
+ 	font-size: 40px;
+ }
+  .main-footer .foot-content h6{
+  	margin-top: 10%;
+  	padding-bottom: 2%;
+  }
+ .main-footer .up{
+ 	margin-top: 5%;
+ } 
+
+
+}
+@media  only screen and (min-width: 761px) and (max-width: 1168px){
+	.main-footer{
+		margin-left: 170px;
+	}
+}
+@media  only screen and (min-width: 0px) and (max-width: 760px){
+	.main-footer{
+		margin-left: 0px;
+	}
+	.copyright{
+		margin-left: 0px;
+	}
+}
+
+

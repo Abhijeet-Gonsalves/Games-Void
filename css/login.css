@@ -1,0 +1,575 @@
+*{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #121212;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+}
+/*.active{
+ 	color: #03e9f4 !important;
+ }*/
+ 
+.title h1{
+	color: #03e9f4;
+	margin-top: 10%;
+	transition: 0.5s;
+	font-size: 60px;
+}
+.title h1:hover{
+	/*color:white;*/
+	cursor: pointer;
+ 	text-shadow: 0 0 5px #03e9f4,
+ 	            0 0 25px #03e9f4,
+ 	            0 0 50px #03e9f4,
+ 	            0 0 200px #03e9f4;
+ 	            -webkit-box-reflect: below 1px linear-gradient(transparent,#0001);
+ }
+.fa-gamepad{
+	color: white;
+}
+.login{
+	background-color: #2A2A2A;
+	width: 500px;
+	height: auto;
+	margin-top: 4%;
+	color: white;
+	padding-top: 12px;
+	border-radius: 20px;
+	padding-bottom: 1.5%;
+	
+}
+.login .heading h2{
+	border-bottom: 1px solid #03e9f4;
+	width: auto;
+	margin-top: 5%;
+	padding-bottom: 7%;
+	margin-bottom: 5%;
+	letter-spacing: 3px;
+}
+.login .heading h5{
+	margin-top: 7%;
+	color: #2A2A2A;
+	margin-bottom: 7%;
+	letter-spacing: 2px;
+	font-size: 23px;
+	animation: blink 1s infinite;
+	 animation-direction: alternate;
+	transition: 0.5s;
+    /*animation-duration: 5s infinite;*/
+}
+@keyframes blink {
+  from {color: #2A2A2A;}
+  to {color: #03e9f4;}
+  /*from {text-shadow: none;}
+  to {text-shadow: 0 0 5px #03e9f4;}*/
+}
+.login form input{
+	width: 70%;
+	margin-left: 14%;
+	margin-top: 5%; 
+	border-radius: 0;
+	font-size: 20px;
+}
+.pass{
+	margin-bottom: 9% ;
+}
+.login form{
+	align-self: center !important;
+	align-items: center;
+}
+.login .btn-outline-success{
+	color: #03e9f4;
+	border-color: #03e9f4 !important;
+	border-radius: 5px;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	transition: 0.5s;
+	border-radius: 50px;
+}
+.login .btn-outline-success:hover{
+	color:black;
+	background-color: #03e9f4 !important;  
+ 	box-shadow: 0 0 5px #03e9f4,
+ 	            0 0 25px #03e9f4,
+ 	            0 0 50px #03e9f4,
+ 	            0 0 170px #03e9f4;
+ }
+.signup .btn-outline-light{
+ 	margin-bottom: 1%;
+ 	border: none;
+ 	transition: 0.5s;
+ 	box-shadow: none !important;
+ }
+ .signup .btn-outline-light:hover{
+	color:  #03e9f4 !important; 
+	background-color: unset !important;  
+ }
+ .signup p{
+ 	margin-bottom: 6%;
+ }
+ .signup .btn-outline-dark{
+ 	color:  #03e9f4 !important; 
+ 	border: none;
+ 	transition: 0.5s;
+ 	padding-top: 0px;
+ 	box-shadow: none !important;
+ }
+ .signup .btn-outline-dark:hover{
+	text-shadow: 0 0 5px #03e9f4;
+	background-color: unset !important;  
+ }
+ input[type=text], input[type=password]{
+ 	background-color: unset !important;
+ 	box-shadow: none !important;
+ 	border: none;
+ 	border-bottom: 1px solid #03e9f4;
+ 	border-color: #03e9f4 !important;
+ 	color: #03e9f4 !important;
+ 	padding-left: 7%;
+ }
+ .fa-user{
+ 	margin-left: 15.4%;
+ 	float: left;
+ 	margin-top: -6.3%;
+ 	font-size: 20px;
+ 	transition: 0.5s;
+ }
+ .fa-lock{
+ 	margin-left: 15.4%;
+ 	float: left;
+ 	margin-top: -6.3%;
+ 	font-size: 20px;
+ 	transition: 0.5s;
+ }
+.fa-eye-slash{
+	color: gray;
+	float: right;
+	margin-top: -7%;
+	margin-right: 18%;
+	font-size: 20px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.fa-eye{
+	color: gray;
+	float: right;
+	margin-top: -7%;
+	margin-right: 18%;
+	font-size: 20px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+  /*****************************************************************************************/
+ /*********************************Responsive***********************************************/
+
+/***********************************xs*****************************************/
+
+
+@media  only screen and (min-width: 1200px) and (max-width: 1399px){
+
+	.title h1{
+		font-size: 50px;
+	}
+
+	.login{
+		width: 450px;
+	}
+
+ }
+ @media  only screen and (min-width: 992px) and (max-width: 1199px){
+
+	.title h1{
+		font-size: 40px;
+	}
+
+	.login{
+		width: 430px;
+	}
+	.login .heading h2{
+		font-size: 30px;
+	}
+	.login .heading h5{
+		font-size: 20px;
+	}
+	.login form input{
+		font-size: 15px;
+	}
+	.signup {
+		font-size: 13px;
+
+	}
+	.signup .btn-outline-light{
+		font-size: 13px;
+	}
+	.signup .btn-outline-dark{
+		font-size: 13px;
+	}
+	.fa-user{
+		font-size: 15px;
+		margin-top: -6%;
+	}
+	.fa-lock{
+		font-size: 15px;
+		margin-top: -6%;
+	}
+	.fa-eye{
+		font-size: 15px;
+		margin-top: -6%;
+	}
+	.fa-eye-slash{
+		font-size: 15px;
+		margin-top: -6%;
+	}
+
+ }
+  @media  only screen and (min-width: 768px) and (max-width: 991px){
+
+	.title h1{
+		font-size: 40px;
+		margin-top: 8%;
+		margin-bottom: 2%;
+	}
+
+	.login{
+		width: 430px;
+	}
+	.login .heading h2{
+		font-size: 30px;
+	}
+	.login .heading h5{
+		font-size: 20px;
+	}
+	.login form input{
+		font-size: 15px;
+	}
+	.signup {
+		font-size: 13px;
+
+	}
+	.signup .btn-outline-light{
+		font-size: 13px;
+	}
+	.signup .btn-outline-dark{
+		font-size: 13px;
+	}
+	.fa-user{
+		font-size: 14px;
+		margin-top: -5.7%;
+	}
+	.fa-lock{
+		font-size: 14px;
+		margin-top: -5.7%;
+	}
+	.fa-eye{
+		font-size: 14px;
+		margin-top: -5.7%;
+	}
+	.fa-eye-slash{
+		font-size: 14px;
+		margin-top: -5.7%;
+	}
+
+ }
+  @media  only screen and (min-width: 430px) and (max-width: 767px){
+
+	.title h1{
+		font-size: 40px;
+		margin-top: 10%;
+		margin-bottom: 5%;
+	}
+
+	.login{
+		width: 430px;
+	}
+	.login .heading h2{
+		font-size: 30px;
+	}
+	.login .heading h5{
+		font-size: 20px;
+	}
+	.login form input{
+		font-size: 15px;
+	}
+	.signup {
+		font-size: 13px;
+
+	}
+	.signup .btn-outline-light{
+		font-size: 13px;
+	}
+	.signup .btn-outline-dark{
+		font-size: 13px;
+	}
+	.fa-user{
+		font-size: 13px;
+		margin-top: -5.6%;
+	}
+	.fa-lock{
+		font-size: 13px;
+		margin-top: -5.6%;
+	}
+	.fa-eye{
+		font-size: 13px;
+		margin-top: -5.6%;
+	}
+	.fa-eye-slash{
+		font-size: 13px;
+		margin-top: -5.6%;
+	}
+
+ }
+
+@media  only screen and (min-width: 376px) and (max-width: 429px){
+
+	.title h1{
+		font-size: 40px;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+	.login{
+		width: 350px;
+	}
+	.login .heading h2{
+		font-size: 25px;
+	}
+	.login .heading h5{
+		font-size: 15px;
+	}
+	.login form input{
+		font-size: 13px;
+	}
+	.signup {
+		font-size: 12px;
+
+	}
+	.signup .btn-outline-light{
+		font-size: 12px;
+	}
+	.signup .btn-outline-dark{
+		font-size: 12px;
+	}
+	.fa-user{
+		font-size: 12px;
+		margin-top: -6.3%;
+	}
+	.fa-lock{
+		font-size: 12px;
+		margin-top: -6.3%;
+	}
+	.fa-eye{
+		font-size: 12px;
+		margin-top: -6.3%;
+	}
+	.fa-eye-slash{
+		font-size: 12px;
+		margin-top: -6.3%;
+	}
+
+ }
+@media  only screen and (min-width: 336px) and (max-width: 375px){
+
+	.title h1{
+		font-size: 35px;
+		margin-top: 15%;
+		margin-bottom: 12%;
+	}
+
+	.login{
+		width: 330px;
+		padding-bottom: 5%;
+	}
+	.login .heading h2{
+		font-size: 20px;
+	}
+	.login .heading h5{
+		font-size: 15px;
+	}
+	.login form input{
+		font-size: 13px;
+	}
+	.signup {
+		font-size: 12px;
+
+	}
+	.signup .btn-outline-light{
+		font-size: 12px;
+	}
+	.signup .btn-outline-dark{
+		font-size: 12px;
+	}
+	.fa-user{
+		font-size: 12px;
+		margin-top: -6.6%;
+	}
+	.fa-lock{
+		font-size: 12px;
+		margin-top: -6.6%;
+	}
+	.fa-eye{
+		font-size: 12px;
+		margin-top: -6.6%;
+	}
+	.fa-eye-slash{
+		font-size: 12px;
+		margin-top: -6.6%;
+	}
+
+ }
+ @media  only screen and (min-width: 285px) and (max-width: 335px){
+
+	.title h1{
+		font-size: 35px;
+		margin-top: 15%;
+		margin-bottom: 12%;
+	}
+
+	.login{
+		width: 280px;
+		padding-bottom: 5%;
+	}
+	.login .heading h2{
+		font-size: 20px;
+	}
+	.login .heading h5{
+		font-size: 13px;
+	}
+	.login form input{
+		font-size: 13px;
+	}
+	.login .btn-outline-success{
+		margin-top: 10%;
+	}
+	.signup {
+		font-size: 10px;
+
+	}
+	.signup .btn-outline-light{
+		font-size: 10px;
+	}
+	.signup .btn-outline-dark{
+		font-size: 10px;
+	}
+	.fa-user{
+		font-size: 11px;
+		margin-top: -8%;
+	}
+	.fa-lock{
+		font-size: 11px;
+		margin-top: -8%;
+	}
+	.fa-eye{
+		font-size: 11px;
+		margin-top: -8%;
+	}
+	.fa-eye-slash{
+		font-size: 11px;
+		margin-top: -8%;
+	}
+
+ }
+ @media  only screen and (min-width: 231px) and (max-width: 284px){
+
+	.title h1{
+		font-size: 30px;
+		margin-top: 20%;
+		margin-bottom: 12%;
+	}
+
+	.login{
+		width: 230px;
+	}
+	.login .heading h2{
+		font-size: 13px;
+	}
+	.login .heading h5{
+		font-size: 12px;
+	}
+	.login form input{
+		font-size: 10px;
+	}
+	.login .btn-outline-success{
+		margin-top: 10%;
+	}
+	.signup {
+		font-size: 8px;
+
+	}
+	.signup .btn-outline-light{
+		font-size: 8px;
+	}
+	.signup .btn-outline-dark{
+		font-size: 8px;
+	}
+	.fa-user{
+		font-size: 8px;
+		margin-top: -8.1%;
+	}
+	.fa-lock{
+		font-size: 8px;
+		margin-top: -8.1%;
+	}
+	.fa-eye{
+		font-size: 8px;
+		margin-top: -8.1%;
+	}
+	.fa-eye-slash{
+		font-size: 8px;
+		margin-top: -8.1%;
+	}
+
+ }
+  @media  only screen and (min-width: 0px) and (max-width: 230px){
+
+	.title h1{
+		font-size: 25px;
+		margin-top: 20%;
+		margin-bottom: 12%;
+	}
+
+	.login{
+		width: 200px;
+		padding-bottom: 10%;
+	}
+	.login .heading h2{
+		font-size: 15px;
+	}
+	.login .heading h5{
+		font-size: 10px;
+	}
+	.login form input{
+		font-size: 9px;
+	}
+	.login .btn-outline-success{
+		margin-top: 16%;
+	}
+	.signup {
+		font-size: 8px;
+
+	}
+	.signup .btn-outline-light{
+		font-size: 8px;
+	}
+	.signup .btn-outline-dark{
+		font-size: 8px;
+	}
+	.fa-user{
+		font-size: 8px;
+		margin-top: -9.1%;
+	}
+	.fa-lock{
+		font-size: 8px;
+		margin-top: -9.1%;
+	}
+	.fa-eye{
+		font-size: 8px;
+		margin-top: -9.1%;
+	}
+	.fa-eye-slash{
+		font-size: 8px;
+		margin-top: -9.1%;
+	}
+
+ }
