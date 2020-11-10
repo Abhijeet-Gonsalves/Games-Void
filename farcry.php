@@ -42,22 +42,22 @@ if(!isset($_SESSION['username'])){
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0 p-1">
             <li class="nav-item pl-2 pr-2">
-              <a class="nav-link js-scroll-trigger active" aria-current="page" href="stor.php#hero">Store</a>
+              <a class="nav-link js-scroll-trigger active" aria-current="page" href="store.php#hero">Store</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="stor.php#new">New Releases</a>
+              <a class="nav-link" href="store.php#new">New Releases</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="stor.php#free">Free Games</a>
+              <a class="nav-link" href="store.php#free">Free Games</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="stor.php#trend">Trending Gams</a>
+              <a class="nav-link" href="store.php#trend">Trending Games</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="stor.php#upcom">Upcomeing</a>
+              <a class="nav-link" href="store.php#upcom">Upcoming</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="stor.php#sale">On Sale</a>
+              <a class="nav-link" href="store.php#sale">On Sale</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
               <a class="nav-link" href="allgame.php">Genre</a>

@@ -47,10 +47,10 @@ session_start();
               <a class="nav-link" href="#free">Free Games</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="#trend">Trending Gams</a>
+              <a class="nav-link" href="#trend">Trending Games</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="#upcom">Upcomeing</a>
+              <a class="nav-link" href="#upcom">Upcoming</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
               <a class="nav-link" href="#sale">On Sale</a>

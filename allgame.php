@@ -51,10 +51,10 @@ if(!isset($_SESSION['username'])){
               <a class="nav-link " href="store.php#free">Free Games</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="store.php#trend">Trending Gams</a>
+              <a class="nav-link" href="store.php#trend">Trending Games</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
-              <a class="nav-link" href="store.php#upcom">Upcomeing</a>
+              <a class="nav-link" href="store.php#upcom">Upcoming</a>
             </li>
             <li class="nav-item js-scroll-trigger pl-2 pr-2">
               <a class="nav-link" href="store.php#sale">On Sale</a>
